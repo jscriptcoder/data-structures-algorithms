@@ -3,7 +3,7 @@ Thess are the solutions to the exercises proposed in the workshop [Data Structur
 
 ### Day 1
 1. Implement a stack data structure:
-  - Source: https://github.com/kuychaco/algoClass/blob/master/data-structures/stack.js)
+  - Source: https://github.com/kuychaco/algoClass/blob/master/data-structures/stack.js
   - TODO: Solution
 2. Create a queue data structure:
   - Source: https://github.com/kuychaco/algoClass/blob/master/data-structures/queue.js
