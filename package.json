@@ -1,0 +1,27 @@
+{
+  "name": "data-structures-algorithms",
+  "version": "1.0.0",
+  "description": "Data Structures and Algorithms in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jscriptcoder/data-structures-algorithms.git"
+  },
+  "author": "Francisco Ramos <jscriptcoder@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jscriptcoder/data-structures-algorithms/issues"
+  },
+  "homepage": "https://github.com/jscriptcoder/data-structures-algorithms#readme",
+  "devDependencies": {
+    "typescript": "^2.3.4",
+    "webpack": "^3.0.0"
+  },
+  "dependencies": {
+    "install": "^0.10.1",
+    "jasmine": "^2.6.0"
+  }
+}
