@@ -1,4 +1,4 @@
-interface Storage<T> {
+export interface Storage<T> {
   [key: string]: T;
 }
 

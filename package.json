@@ -2,7 +2,6 @@
   "name": "data-structures-algorithms",
   "version": "1.0.0",
   "description": "Data Structures and Algorithms in Javascript",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,11 +16,15 @@
   },
   "homepage": "https://github.com/jscriptcoder/data-structures-algorithms#readme",
   "devDependencies": {
-    "typescript": "^2.3.4",
-    "webpack": "^3.0.0"
+    "awesome-typescript-loader": "^3.2.1",
+    "source-map-loader": "^0.2.1",
+    "typescript": "^2.4.1"
   },
   "dependencies": {
-    "install": "^0.10.1",
-    "jasmine": "^2.6.0"
+    "@types/react": "^15.0.33",
+    "@types/react-dom": "^15.5.1",
+    "jasmine": "^2.6.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   }
 }

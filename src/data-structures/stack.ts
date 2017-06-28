@@ -92,6 +92,10 @@ export class Stack<T> {
     return this.length;
   }
 
+  public contains(value: T): boolean {
+    return !!Object.keys(this.storage).find(key => this.storage[key] === value);
+  }
+
 }
 // Time complexity:
 
