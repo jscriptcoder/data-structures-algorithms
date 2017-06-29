@@ -45,9 +45,6 @@ myQueue.until(7)
 => 3
 What's the time complexity?
 
-
-
-
  */
 
 import { Storage, createStorage } from './utils';
@@ -64,6 +61,7 @@ export class Queue<T> {
     this.length = 0;
   }
 
+  // O(1)
   public enqueue(value: T): number {
     if (this.length < this.capacity) {
       this.storage[this.length] = value;
@@ -74,6 +72,7 @@ export class Queue<T> {
     }
   }
 
+  // O(1)
   public dequeue(): T {
     if (this.length > 0) {
       const value = this.storage[0];
@@ -83,33 +82,36 @@ export class Queue<T> {
     }
   }
 
+  // O(1)
   public peek(): T {
     if (this.length > 0) {
       return this.storage[0];
     }
   }
 
+  // O(1)
   public size(): number {
     return this.length;
   }
 
+  // O(n)
   public contains(value: T): boolean {
     return !!Object.keys(this.storage).find(key => this.storage[key] === value);
   }
 
+  // O(n)
+  public until(value: T): number {
+    let numDequeues = 0;
+    for(let i = 0; i < this.length; i++) {
+      if (this.storage[i] === value) {
+        return ++numDequeues;
+      } else {
+        numDequeues++;
+      }
+    }
+
+    throw "Value does not exist in the Queue";
+    
+  }
+
 }
-// Time complexity:
-
-
-
-/*
-*** Exercises:
-
-1. Implement a queue using two stacks.
-
-2. Implement a double-ended queue, with the following methods: enqueueLeft, dequeueLeft, enqueueRight, dequeueRight.
-
-3. Given a tree, print out the value of each node in breadth-first order using a queue data structure.
-
-
- */

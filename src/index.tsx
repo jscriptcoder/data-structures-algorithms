@@ -1,5 +1,14 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './app';
+import { HashRouter as Router } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+import App from './App';
+
+
+
+ReactDOM.render(
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById('root')
+);

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Data Structures and Algorithms in Javascript",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,17 @@
   "devDependencies": {
     "awesome-typescript-loader": "^3.2.1",
     "source-map-loader": "^0.2.1",
-    "typescript": "^2.4.1"
+    "typescript": "^2.4.1",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
   },
   "dependencies": {
     "@types/react": "^15.0.33",
     "@types/react-dom": "^15.5.1",
+    "@types/react-router-dom": "^4.0.5",
     "jasmine": "^2.6.0",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.1"
   }
 }
