@@ -25769,7 +25769,7 @@ var React = __webpack_require__(6);
 var react_router_dom_1 = __webpack_require__(56);
 var Home_1 = __webpack_require__(227);
 var Stack_1 = __webpack_require__(228);
-var Queue_1 = __webpack_require__(229);
+var Queue_1 = __webpack_require__(232);
 var Routes = function () { return (React.createElement(react_router_dom_1.Switch, null,
     React.createElement(react_router_dom_1.Route, { exact: true, path: "/", component: Home_1.default }),
     React.createElement(react_router_dom_1.Route, { path: "/stack", component: Stack_1.default }),
@@ -25785,7 +25785,8 @@ exports.default = Routes;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(6);
-var Home = function () { return React.createElement("h1", null, "Home"); };
+var Home = function () { return (React.createElement("section", { className: "home" },
+    React.createElement("h1", null, "Home"))); };
 exports.default = Home;
 
 
@@ -25797,7 +25798,10 @@ exports.default = Home;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(6);
-var Stack = function () { return React.createElement("h1", null, "Stack"); };
+var StackUI_1 = __webpack_require__(229);
+var Stack = function () { return (React.createElement("section", { className: "stack" },
+    React.createElement("h1", null, "Stack"),
+    React.createElement(StackUI_1.default, null))); };
 exports.default = Stack;
 
 
@@ -25807,9 +25811,200 @@ exports.default = Stack;
 
 "use strict";
 
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(6);
-var Queue = function () { return React.createElement("h1", null, "Queue"); };
+var stack_1 = __webpack_require__(230);
+var StackUI = (function (_super) {
+    __extends(StackUI, _super);
+    function StackUI() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    StackUI.prototype.create = function (capacity) {
+        this.stack = new stack_1.default(capacity);
+    };
+    StackUI.prototype.push = function (value) {
+        this.stack.push(value);
+    };
+    StackUI.prototype.pop = function () {
+        this.stack.pop();
+    };
+    StackUI.prototype.peek = function () {
+        this.stack.peek();
+    };
+    StackUI.prototype.render = function () {
+        return (React.createElement("div", { className: "stack-api" },
+            React.createElement("fieldset", null,
+                React.createElement("legend", null, "Stack Interface"),
+                React.createElement("table", null,
+                    React.createElement("tr", null,
+                        React.createElement("td", null,
+                            React.createElement("button", null, "Create Stack")),
+                        React.createElement("td", null,
+                            React.createElement("input", { type: "text", placeholder: "Capacity..." }))),
+                    React.createElement("tr", null,
+                        React.createElement("td", null,
+                            React.createElement("label", null, "Push value")),
+                        React.createElement("td", null,
+                            React.createElement("input", { type: "text" }))),
+                    React.createElement("tr", null,
+                        React.createElement("td", null,
+                            React.createElement("label", null, "Pop value")),
+                        React.createElement("td", null,
+                            React.createElement("input", { type: "text" })))))));
+    };
+    return StackUI;
+}(React.Component));
+exports.default = StackUI;
+
+
+/***/ }),
+/* 230 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/*
+
+STACK
+
+Abstract data type
+LIFO - Last in, first out
+Collection of elements with push and pop operations.
+Note that there is a natural order. Elements are removed in the reverse order of their addition.
+
+DO NOT use an array and the native push/pop method in your implementation. That's too easy, yeah? =P
+Use an object as the underlying data structure.
+
+
+*** Operations:
+
+myStack.push(value)
+=> count of stack
+add value to collection
+
+myStack.pop()
+=> most recent element added collection
+Remove item so that it is no longer in collection
+
+myStack.peek()
+=> most recent element added collection
+Similiar to pop, but do not remove element from collection
+
+myStack.count()
+=> number of elements in stack
+
+
+*** Additional Exercises:
+
+Modify your stack to take a max capacity and return a string if you try to add an element when there's no more room:
+myStack.push(value)
+=> "Max capacity already reached. Remove element before adding a new one."
+
+Create a contains method to check if a value is in the stack:
+myStack.contains('findme')
+=> true/false
+What's the time complexity?
+
+Create an until method to get the number of pops until you get to a certain value:
+stack values - (first)2-5-7-3-6-9(last)
+myStack.until(7)
+=> 4
+What's the time complexity?
+
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+var utils_1 = __webpack_require__(231);
+var Stack = (function () {
+    function Stack(capacity) {
+        if (capacity === void 0) { capacity = Infinity; }
+        this.capacity = capacity;
+        this.storage = utils_1.createStorage();
+        this.length = 0;
+    }
+    // O(1)
+    Stack.prototype.push = function (value) {
+        if (this.length < this.capacity) {
+            this.storage[this.length] = value;
+            return ++this.length;
+        }
+        else {
+            throw "Max capacity already reached. Remove element before adding a new one.";
+        }
+    };
+    // O(1)
+    Stack.prototype.pop = function () {
+        if (this.length > 0) {
+            var value = this.storage[this.length - 1];
+            delete this.storage[--this.length];
+            return value;
+        }
+    };
+    // O(1)
+    Stack.prototype.peek = function () {
+        if (this.length > 0) {
+            return this.storage[this.length - 1];
+        }
+    };
+    // O(1)
+    Stack.prototype.size = function () {
+        return this.length;
+    };
+    // O(n)
+    Stack.prototype.contains = function (value) {
+        var _this = this;
+        return !!Object.keys(this.storage).find(function (key) { return _this.storage[key] === value; });
+    };
+    // O(n)
+    Stack.prototype.until = function (value) {
+        var numPops = 0;
+        for (var i = this.length - 1; i >= 0; i--) {
+            if (this.storage[i] === value) {
+                return ++numPops;
+            }
+            else {
+                numPops++;
+            }
+        }
+        throw "Value does not exist in the Stack";
+    };
+    return Stack;
+}());
+exports.default = Stack;
+
+
+/***/ }),
+/* 231 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+function createStorage() {
+    return {};
+}
+exports.createStorage = createStorage;
+
+
+/***/ }),
+/* 232 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(6);
+var Queue = function () { return (React.createElement("section", { className: "queue" },
+    React.createElement("h1", null, "Queue"))); };
 exports.default = Queue;
 
 

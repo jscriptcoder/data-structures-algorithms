@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Data Structures and Algorithms in Javascript",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --open",
     "build": "webpack"
   },
   "repository": {

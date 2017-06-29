@@ -1,9 +1,6 @@
 import * as React from 'react';
-
 import Navigation from './components/Navigation';
 import Routes from './components/Routes';
-
-
 
 const App = (): JSX.Element => (
   <div className="app">
@@ -14,7 +11,7 @@ const App = (): JSX.Element => (
     <main>
       <Routes />
     </main>
-    
+
     <footer></footer>
   </div>
 );

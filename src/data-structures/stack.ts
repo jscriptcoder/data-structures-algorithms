@@ -50,7 +50,7 @@ What's the time complexity?
 
 import { Storage, createStorage } from './utils';
 
-export class Stack<T> {
+export default class Stack<T> {
   
   private capacity: number;
   private storage: Storage<T>;
