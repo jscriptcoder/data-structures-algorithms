@@ -13,6 +13,7 @@
   push   - function - accepts a value and adds to the end of the list
   pop    - function - removes the last value in the list and returns it
   get    - function - accepts an index and returns the value at that position
+  insert - function - inserts a value where the index
   delete - function - accepts an index, removes value from list, collapses, 
                       and returns removed value
                       
@@ -82,6 +83,11 @@ export class LinkedList<T> {
     if (node) {
       return node.value;
     }
+  }
+
+  // O(n)
+  public insert(index: number): number {
+    return this._length;
   }
 
   // O(n)
