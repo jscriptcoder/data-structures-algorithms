@@ -67,5 +67,19 @@ Thess are the solutions to the exercises proposed in the workshop [Data Structur
   - https://github.com/kuychaco/algoClass/blob/master/data-structures/hashTable.js
   - TODO: Solution
 
-# TODO
-Maybe also cover https://frontendmasters.com/courses/computer-science/
+# Four Semesters of Computer Science in 5 Hours
+In this section I'm implementing the data structures and algorithms covered by [this workshop](https://frontendmasters.com/courses/computer-science/) that haven't been covered by the previous one.
+
+[Presentation here](http://btholt.github.io/four-semesters-of-cs/)
+
+1. Implement an ArrayList:
+  - TODO: Solution
+
+2. Implement a LinkedList:
+  - TODO: Solution
+
+3. Implement a Set:
+  - TODO: Solution
+
+4. Implement a Map:
+  - TODO: Solution

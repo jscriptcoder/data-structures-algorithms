@@ -23,7 +23,7 @@ export default class StackUI extends React.Component<any, any> {
 
   public render(): JSX.Element {
     return (
-      <div className="stack-api">
+      <div className="stack-ui">
         <fieldset>
           <legend>Stack Interface</legend>
           <table>
@@ -32,12 +32,14 @@ export default class StackUI extends React.Component<any, any> {
               <td><input type="text" placeholder="Capacity..." /></td>
             </tr>
             <tr>
-              <td><label>Push value</label></td>
+              <td><button>Push value</button></td>
               <td><input type="text" /></td>
+              <td>Returned value: </td>
             </tr>
             <tr>
-              <td><label>Pop value</label></td>
+              <td><button>Pop value</button></td>
               <td><input type="text" /></td>
+              <td>Returned value: </td>
             </tr>
           </table>
         </fieldset>
