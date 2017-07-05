@@ -86,7 +86,32 @@ export class LinkedList<T> {
   }
 
   // O(n)
-  public insert(index: number): number {
+  public insert(index: number, value: T): number {
+    let newNode = new Node(value);
+
+    if (index === 0) {
+      if (this._length > 1) {
+        newNode.next = this.head;
+        this.head = newNode;
+        this._length++;
+      } else {
+        this.tail = this.head = newNode;
+        this._length = 1;
+      }
+    } else if (index > 0 && index < this._length) {
+
+      const previous = this.getNode(index - 1);
+      [newNode.next, previous.next] = [previous.next, newNode];
+
+      if (index === this._length - 1) {
+        this.tail = newNode.next;
+      }
+
+      this._length++;
+
+    }
+    
+
     return this._length;
   }
 

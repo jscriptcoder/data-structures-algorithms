@@ -1,7 +1,10 @@
-# Frontend Master workshopt - Data Structures and Algorithms in Javascript
+# Frontend Master workshops - Data Structures and Algorithms in Javascript
 Thess are the solutions to the exercises proposed in the workshop [Data Structures and Algorithms in Javascript](https://frontendmasters.com/courses/data-structures-algorithms/), which repository can be found [here](https://github.com/kuychaco/algoClass)
 
 ### Day 1
+
+**Note:** The main idea is to implement these data structures without using Javascript arrays, but simple objects, which makes the implementation more real (low level like)
+
 1. Implement a stack data structure:
   - Source: https://github.com/kuychaco/algoClass/blob/master/data-structures/stack.js
   - TODO: Solution
@@ -71,6 +74,8 @@ Thess are the solutions to the exercises proposed in the workshop [Data Structur
 In this section I'm implementing the data structures and algorithms covered by [this workshop](https://frontendmasters.com/courses/computer-science/) that haven't been covered by the previous one.
 
 [Presentation here](http://btholt.github.io/four-semesters-of-cs/)
+
+**Note:** Do not use Javascript arrays. That's cheating ;-)
 
 1. Implement an ArrayList:
   - TODO: Solution

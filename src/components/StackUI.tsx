@@ -24,7 +24,7 @@ export default class StackUI extends React.Component<any, any> {
   public render(): JSX.Element {
     return (
       <div className="stack-ui">
-        <fieldset>
+        <fieldset className="stack-api">
           <legend>Stack Interface</legend>
           <table>
             <tr>
@@ -43,6 +43,9 @@ export default class StackUI extends React.Component<any, any> {
             </tr>
           </table>
         </fieldset>
+        <div className="stack-view">
+          
+        </div>
       </div>
     );
   }
