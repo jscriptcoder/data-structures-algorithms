@@ -59,10 +59,11 @@ export class Set<T> {
   }
 
   // O(n)
-  public forEach(callback: {(value: T): void}): void {
+  public forEach(callback: {(value: T): void}): Set<T> {
     for (let i = 0, len = this._length; i < len; i++) {
       callback(this.storage[i]);
     }
+    return this;
   }
 
   // O(n)
