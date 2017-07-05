@@ -43,6 +43,7 @@ export class Set<T> {
   // O(1)
   public clear(): Set<T> {
     this.storage = createStorage<T>();
+    this._length = 0;
     return this;
   }
 
@@ -52,6 +53,7 @@ export class Set<T> {
     const found = idx >= 0;
     if (found) {
       delete this.storage[idx];
+      this._length--;
     }
     return found;
   }
