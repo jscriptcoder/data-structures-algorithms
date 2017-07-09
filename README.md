@@ -7,10 +7,14 @@ Thess are the solutions to the exercises proposed in the workshop [Data Structur
 
 1. Implement a stack data structure:
   - Source: https://github.com/kuychaco/algoClass/blob/master/data-structures/stack.js
-  - TODO: Solution
+  - Solution:
+    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/stack.ts
+    - Visualization: TODO
 2. Create a queue data structure:
   - Source: https://github.com/kuychaco/algoClass/blob/master/data-structures/queue.js
-  - TODO: Solution
+  - Solution:
+    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/queue.ts
+    - Visualization: TODO
 3. Start off with some intro to recursion problems
   - Source: https://github.com/kuychaco/algoClass/blob/master/recursion/recursionIntro.js
   - TODO: Solution
@@ -78,13 +82,21 @@ In this section I'm implementing the data structures and algorithms covered by [
 **Note:** Do not use Javascript arrays. That's cheating ;-)
 
 1. Implement an ArrayList:
-  - TODO: Solution
+  - Solution
+    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/array-list.ts
+    - Visualization: TODO
 
 2. Implement a LinkedList:
-  - TODO: Solution
+  - Solution:
+    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/linked-list.ts
+    - Visualization: TODO
 
 3. Implement a Set:
-  - TODO: Solution
+  - Solution:
+    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/set.ts
+    - Visualization: TODO
 
 4. Implement a Map:
-  - TODO: Solution
+  - Solution:
+    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/map.ts
+    - Visualization: TODO

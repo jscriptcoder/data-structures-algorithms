@@ -5,6 +5,10 @@ module.exports = {
         path: __dirname + "/dist"
     },
     devtool: "source-map",
+    watchOptions: {
+        aggregateTimeout: 300,
+        poll: 1000
+    },
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".json"]
     },

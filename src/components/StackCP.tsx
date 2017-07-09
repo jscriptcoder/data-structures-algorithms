@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Stack from '../data-structures/stack';
 
-export default class StackUI extends React.Component<any, any> {
+export default class StackCP extends React.Component<any, any> {
 
   private stack: Stack<string>;
 
@@ -23,29 +23,22 @@ export default class StackUI extends React.Component<any, any> {
 
   public render(): JSX.Element {
     return (
-      <div className="stack-ui">
+      <div className="stack-cp">
         <fieldset className="stack-api">
-          <legend>Stack Interface</legend>
+          <legend>Stack Control Panel</legend>
           <table>
             <tr>
               <td><button>Create Stack</button></td>
               <td><input type="text" placeholder="Capacity..." /></td>
+              <td>Size</td>
             </tr>
-            <tr>
-              <td><button>Push value</button></td>
-              <td><input type="text" /></td>
-              <td>Returned value: </td>
-            </tr>
-            <tr>
-              <td><button>Pop value</button></td>
-              <td><input type="text" /></td>
-              <td>Returned value: </td>
-            </tr>
+
           </table>
         </fieldset>
-        <div className="stack-view">
-          
-        </div>
+        <br />
+        <fieldset className="stack-view">
+          <legend>Stack Visualization</legend>
+        </fieldset>
       </div>
     );
   }

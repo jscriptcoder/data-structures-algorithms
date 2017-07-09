@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Data Structures and Algorithms in Javascript",
   "scripts": {
+    "prestart": "npm run build",
     "start": "webpack-dev-server --open",
+    "watch": "webpack -d --watch",
     "build": "webpack"
   },
   "repository": {

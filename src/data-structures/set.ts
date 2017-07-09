@@ -1,5 +1,6 @@
 /*
   Set
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
   
   Properties:
     size
@@ -15,7 +16,6 @@
 
 import { Storage, createStorage } from './utils';
 
-// @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
 export class Set<T> {
 
   private storage: Storage<T>;
