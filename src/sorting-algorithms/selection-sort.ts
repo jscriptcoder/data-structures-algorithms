@@ -24,11 +24,22 @@ Stable Variant
 - Implement as a stable sort - rather than swapping, the minimum value is inserted into the first position and all other items are shifted one to the right. How does this impact performance?
 - Modify function to take comparator function. specify default if not provided (check out native Array.sort comparator function for reference)
 - Use your comparator function to verify that your sort is stable by taking input: [{value: 15}, {value: 10, order: 1}, {value: 10, order: 2}]
-
 - Implement selection sort for a linked list (you can use your data structure implemention from earlier in the course). How does this impact performance and stability?
 
 */
 
-export default function selectionSort<T>(arr: T[]): void {
-  
+import { Comparator } from './utils';
+
+// Worst O(n2)
+// Best O(n2)
+export default function selectionSort<T>(arr: T[], comparator: Comparator<T>): void {
+  let pivot = 0;
+  let min;
+  for (pivot = 0; pivot < arr.length; pivot++) {
+    min = pivot;
+    for (let i = pivot + 1; i < arr.length; i++) {
+      min = comparator(arr[min], arr[i]) ? i : min;
+    }
+    [arr[pivot], arr[min]] = [arr[min], arr[pivot]];
+  }
 }

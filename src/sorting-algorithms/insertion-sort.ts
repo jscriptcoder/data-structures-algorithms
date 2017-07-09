@@ -29,3 +29,20 @@ now repeat for next unsorted element
 (https://en.wikipedia.org/wiki/Shellsort)
 
 */
+
+import { Comparator } from './utils';
+
+// Worst O(n2)
+// Best O(n) nearly sorted
+export default function insertionSort<T>(arr: T[], comparator: Comparator<T>): void {
+  let pivot = 1;
+  for (pivot = 1; pivot < arr.length; pivot++) {
+    const pivotVal = arr[pivot];
+    let i = pivot - 1;
+    while (i >= 0 && comparator(arr[i], pivotVal)) {
+      arr[i+1] = arr[i];
+      i--;
+    }
+    arr[i+1] = pivotVal;
+  }
+}
