@@ -25,7 +25,9 @@ Thess are the solutions to the exercises proposed in the workshop [Data Structur
 ### Day 2
 1. Implement the elementary sorting algorithms (bubble, insertion, selection):
   - https://github.com/kuychaco/algoClass/tree/master/sorting-algorithms
-  - TODO: Solution
+  - Solution:
+    - Source: https://github.com/jscriptcoder/data-structures-algorithms/tree/master/src/sorting-algorithms
+    - Visualization: TODO
 2. Implement Mergesort
   - https://github.com/kuychaco/algoClass/blob/master/sorting-algorithms/merge.js
   - TODO: Solution
