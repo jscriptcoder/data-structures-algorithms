@@ -18,7 +18,7 @@ Thess are the solutions to the exercises proposed in the workshop [Data Structur
 3. Start off with some intro to recursion problems
   - Source: https://github.com/kuychaco/algoClass/blob/master/recursion/recursionIntro.js
   - Solution:
-    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/recursion/recursionIntro.ts
+    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/recursion/recursion-intro.ts
     - Visualization: TODO
 4. If you want a challenge, attempt some popular recursion interview questions:
   - Source: https://github.com/kuychaco/algoClass/tree/master/recursion
