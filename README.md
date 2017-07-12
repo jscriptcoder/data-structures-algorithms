@@ -20,11 +20,13 @@ Thess are the solutions to the exercises proposed in the workshop [Data Structur
 4. If you want a challenge, attempt some popular recursion interview questions:
   - Source: https://github.com/kuychaco/algoClass/tree/master/recursion
   - Solution:
-    - Factorial:
+    - Factorial: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/recursion/factorial.ts
     - Test: TODO
-    - Fibonacci:
-    - Test: TODO 
-    - Gratest Common Divisor:
+    - Fibonacci: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/recursion/fibonacci.ts
+    - Test: TODO
+    - Flatten: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/recursion/flatten.ts
+    - Test: TODO
+    - Gratest Common Divisor: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/recursion/greatest-common-divisor.ts
     - Test: TODO
 5. Extra: Other data structures (Set, Map)
   - Solution:
