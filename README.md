@@ -7,33 +7,43 @@ Thess are the solutions to the exercises proposed in the workshop [Data Structur
 
 1. Implement a stack data structure:
   - Source: https://github.com/kuychaco/algoClass/blob/master/data-structures/stack.js
-  - Solution:
-    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/stack.ts
-    - Unit-test: TODO
+  - Solution: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/stack.ts
+  - Test: TODO
 2. Create a queue data structure:
   - Source: https://github.com/kuychaco/algoClass/blob/master/data-structures/queue.js
-  - Solution:
-    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/queue.ts
-    - Unit-test: TODO
+  - Solution: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/queue.ts
+  - Test: TODO
 3. Start off with some intro to recursion problems
   - Source: https://github.com/kuychaco/algoClass/blob/master/recursion/recursionIntro.js
-  - Solution:
-    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/recursion/recursion-intro.ts
-    - Unit-test: TODO
+  - Solution: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/recursion/recursion-intro.ts
+  - Test: TODO
 4. If you want a challenge, attempt some popular recursion interview questions:
   - Source: https://github.com/kuychaco/algoClass/tree/master/recursion
-  - TODO: Solution
+  - Solution:
+    - Factorial:
+    - Test: TODO
+    - Fibonacci:
+    - Test: TODO 
+    - Gratest Common Divisor:
+    - Test: TODO
 5. Extra: Other data structures (Set, Map)
   - Solution:
-    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/
-    - Unit-test: TODO
+    - Set: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/set.ts
+    - Test: TODO
+    - Map: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/map.ts
+    - Test: TODO
+
 
 ### Day 2
 1. Implement the elementary sorting algorithms (bubble, insertion, selection):
-  - https://github.com/kuychaco/algoClass/tree/master/sorting-algorithms
+  - Source: https://github.com/kuychaco/algoClass/tree/master/sorting-algorithms
   - Solution:
-    - Source: https://github.com/jscriptcoder/data-structures-algorithms/tree/master/src/sorting-algorithms
-    - Unit-test: TODO
+    - Bubble sort: https://github.com/jscriptcoder/data-structures-algorithms/tree/master/src/sorting-algorithms/bubble-sort.ts
+    - Test: TODO
+    - Insertion sort: https://github.com/jscriptcoder/data-structures-algorithms/tree/master/src/sorting-algorithms/insertion-sort.ts
+    - Test: TODO
+    - Selection sort: https://github.com/jscriptcoder/data-structures-algorithms/tree/master/src/sorting-algorithms/selection-sort.ts
+    - Test: TODO
 2. Implement Mergesort
   - https://github.com/kuychaco/algoClass/blob/master/sorting-algorithms/merge.js
   - TODO: Solution
@@ -47,16 +57,14 @@ Thess are the solutions to the exercises proposed in the workshop [Data Structur
 ### Day 3
 1. Implement a Linked List:
   - Source: https://github.com/kuychaco/algoClass/blob/master/data-structures/linkedList.js
-  - Solution:
-    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/linked-list.ts
-    - Unit-test: TODO
+  - Solution: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/linked-list.ts
+  - Test: TODO
 2. Create a tree data structure:
   - Source: https://github.com/kuychaco/algoClass/blob/master/data-structures/tree.js
   - Solution: TODO
 3. Extra: Implement an ArrayList
-  - Solution
-    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/array-list.ts
-    - Unit-test: TODO
+  - Solution: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/array-list.ts
+  - Test: TODO
 
 ### Day 4
 1. Binary Search Tree
