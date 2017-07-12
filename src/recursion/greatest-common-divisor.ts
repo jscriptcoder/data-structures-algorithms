@@ -1,7 +1,11 @@
 export function greatestCommonDivisor(num1: number, num2: number): number {
-  if (num2 === 0) {
-    return num1;
+  const min = Math.min(num1, num2);
+  const max = Math.max(num1, num2);
+
+  if (max % min === 0) {
+    return min;
   } else {
-    greatestCommonDivisor(num2, num1 % num2);
+    return greatestCommonDivisor(min, max % min);
   }
+  
 }
