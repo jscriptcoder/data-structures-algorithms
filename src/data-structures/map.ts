@@ -1,22 +1,3 @@
-/*
-  Map
-    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
-  
-  Properties:
-    size
-
-  Methods:
-    clear()
-    delete()
-    entries()
-    forEach()
-    get()
-    has()
-    keys()
-    set()
-    values()
-*/
-
 import { Storage, createStorage } from './utils';
 
 export class Map<K, V> {

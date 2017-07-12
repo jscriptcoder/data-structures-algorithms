@@ -1,19 +1,3 @@
-/*
-  Set
-    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
-  
-  Properties:
-    size
-
-  Methods:
-    add()
-    clear()
-    delete()
-    forEach()
-    has()
-    values()
-*/
-
 import { Storage, createStorage } from './utils';
 
 export class Set<T> {

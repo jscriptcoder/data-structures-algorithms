@@ -9,27 +9,31 @@ Thess are the solutions to the exercises proposed in the workshop [Data Structur
   - Source: https://github.com/kuychaco/algoClass/blob/master/data-structures/stack.js
   - Solution:
     - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/stack.ts
-    - Visualization: TODO
+    - Unit-test: TODO
 2. Create a queue data structure:
   - Source: https://github.com/kuychaco/algoClass/blob/master/data-structures/queue.js
   - Solution:
     - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/queue.ts
-    - Visualization: TODO
+    - Unit-test: TODO
 3. Start off with some intro to recursion problems
   - Source: https://github.com/kuychaco/algoClass/blob/master/recursion/recursionIntro.js
   - Solution:
     - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/recursion/recursion-intro.ts
-    - Visualization: TODO
+    - Unit-test: TODO
 4. If you want a challenge, attempt some popular recursion interview questions:
   - Source: https://github.com/kuychaco/algoClass/tree/master/recursion
   - TODO: Solution
+5. Extra: Other data structures (Set, Map)
+  - Solution:
+    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/
+    - Unit-test: TODO
 
 ### Day 2
 1. Implement the elementary sorting algorithms (bubble, insertion, selection):
   - https://github.com/kuychaco/algoClass/tree/master/sorting-algorithms
   - Solution:
     - Source: https://github.com/jscriptcoder/data-structures-algorithms/tree/master/src/sorting-algorithms
-    - Visualization: TODO
+    - Unit-test: TODO
 2. Implement Mergesort
   - https://github.com/kuychaco/algoClass/blob/master/sorting-algorithms/merge.js
   - TODO: Solution
@@ -42,11 +46,17 @@ Thess are the solutions to the exercises proposed in the workshop [Data Structur
 
 ### Day 3
 1. Implement a Linked List:
-  - https://github.com/kuychaco/algoClass/blob/master/data-structures/linkedList.js
-  - TODO: Solution
+  - Source: https://github.com/kuychaco/algoClass/blob/master/data-structures/linkedList.js
+  - Solution:
+    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/linked-list.ts
+    - Unit-test: TODO
 2. Create a tree data structure:
-  - https://github.com/kuychaco/algoClass/blob/master/data-structures/tree.js
-  - TODO: Solution
+  - Source: https://github.com/kuychaco/algoClass/blob/master/data-structures/tree.js
+  - Solution: TODO
+3. Extra: Implement an ArrayList
+  - Solution
+    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/array-list.ts
+    - Unit-test: TODO
 
 ### Day 4
 1. Binary Search Tree
@@ -77,30 +87,3 @@ Thess are the solutions to the exercises proposed in the workshop [Data Structur
 1. Create your own Hash Tables! Watch out for those collisions!
   - https://github.com/kuychaco/algoClass/blob/master/data-structures/hashTable.js
   - TODO: Solution
-
-# Four Semesters of Computer Science in 5 Hours
-In this section I'm implementing the data structures and algorithms covered by [this workshop](https://frontendmasters.com/courses/computer-science/) that haven't been covered by the previous one.
-
-[Presentation here](http://btholt.github.io/four-semesters-of-cs/)
-
-**Note:** Do not use Javascript arrays. That's cheating ;-)
-
-1. Implement an ArrayList:
-  - Solution
-    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/array-list.ts
-    - Visualization: TODO
-
-2. Implement a LinkedList:
-  - Solution:
-    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/linked-list.ts
-    - Visualization: TODO
-
-3. Implement a Set:
-  - Solution:
-    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/set.ts
-    - Visualization: TODO
-
-4. Implement a Map:
-  - Solution:
-    - Source: https://github.com/jscriptcoder/data-structures-algorithms/blob/master/src/data-structures/map.ts
-    - Visualization: TODO
